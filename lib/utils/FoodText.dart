@@ -101,10 +101,252 @@ const Wals_vegetable = 'વાલનું શાક';
 const Math = 'મઠ';
 
 // કાઠિયાવાડી
+/*
+Kadhi_Khichdi
+Wagharelo_Rotlo
+Masala_Rotlo
+Lasagna_Potatoes
+Cabbage_Masala
+Onion_Masala
+Mixed_Vegetables
+Eggplant_Stuffed
+Eggplant_Filling
+Eggplant_Masala
+Girnari_Khichdi
+bhinda_Masala
+Sev_Onion
+Aloo_Brinjal_Rasawala
+Curd_bhinda
+Kadhi_Pakora
+Aloo_Palak
+Mug_Masala
+Sev_Masala
+Sev_Tomato
+Potato_Rasawala
+Dhokri
+Plain_Spinach
+Dried_Vegetables
+Aloo_Peas
+Tomato_Onion
+Masala_Khichdi
+Yogi_Tikharai
+Mug_Fry
+Bhinda_Fry
+PlainKhichdi
+Undhiu
+Ringan_Potato_Filled
+Dhokli
+Guar_Potato
+Bhinda_Vegetable
+Tomato_Vegetable
+Dungari_Potato
+Cabbage_Potato
+Flower_Potato
+Chori_Batka
+Mithi_Bhaji
+Pava_Bhaji
+કઢી ખીચડી
+વઘારેલો રોટલો
+મસાલા રોટલો
+લસાણીયા બટાકા
+કોબીટ્ચ મસાલા
+ડુંગળી મસાલા
+મિક્સ ભાજી
+બેગણ ભરેલા
+બેગણ ભરતા
+બેગણ મસાલા
+ગીરનારી ખીચડી
+ભીંડા મસાલા
+સેવ ડુંગળી
+આલુ બેગણ રસાવાલા
+દહી ભીંડા
+કઢી પકોડા
+આલુ પાલક
+મગ મસાલા
+સેવ મસાલા
+સેવ ટમેટો
+બટાકા રસવાલા
+ઢોકરી
+પ્લેન પાલક
+સૂકીભાજી
+આલુ મટર
+ટમેટો ડુંગળી
+મસાલા ખીચડી
+દહીં તીખારી
+મગ ફ્રાય
+ભીંડા ફ્રાય
+પ્લેન ખીચડી
+ઉંધિયુ
+રિંગણ બટેકા ભરેલું
+ઢોકળી
+ગવાર બટેકા
+ભીંડા નું શાક
+ટામેટાનું શાક
+ડુંગરી બટેકા
+કોબી બટેકા
+ફ્લાવર બટેકા
+ચોરી બેટકા
+મીઠી ભાજી
+પાવભાજી
+*/
 
 // વેજીટેબલ વેરિયેટી
+/*Vegetable_Darbari
+Vegetable_Jaipuri
+Vegetable_Singaporean
+Vegetable_Toofani
+Vegetable_Kolapuri
+Vegetable_Kadai
+Vegetable_Tawa Masala
+Vegetable_Handi
+Vegetable_Hyderabadi
+Vegetable_Makhanwala
+Vegetable_Rajrani
+Vegetable_Keema_Masala
+Vegetable_Hariyali
+Vegetable_Navratna Korma
+Vegetable_Jafrani
+Vegetable_Mushroom_Masala
+Vegetable_Korma
+Vegetable_Hungama
+Vegetable_Angara
+Vegetable_Tiranga
+Tomato_con_bortu
+Spinach_con_capsicum
+Peacock_capsicum
+Vegetable_Diwani
+Shahi_Veg
+Capsicum_Tomato
+Con_stuffing
+Aloo_capsicum
+Peacock_spinach
+Mix_vegetable
+વેજીટેબલ દરબારી
+વેજીટેબલ જયપુરી
+વેજીટેબલ સિંગાપુરી
+વેજીટેબલ તૂફાની
+વેજીટેબલ કોળાપુરી
+વેજીટેબલ કડાઈ
+વેજીટેબલ તવા મસાલા
+વેજીટેબલ હંડી
+વેજીટેબલ હૈડેરાબાદી
+વેજીટેબલ મખણવાલા
+વેજીટેબલ રાજરાણી
+વેજીટેબલ કિમા મસાલા
+વેજીટેબલ હરિયાળી
+વેજીટેબલ નવરત્ન કોરમા
+વેજીટેબલ જાફરાની
+વેજીટેબલ મશરૂમ મસાલા
+વેજીટેબલ કોરમા
+વેજીટેબલ હંગામા
+વેજીટેબલ અંગારા
+વેજીટેબલ તિરંગા
+ટમેટો કોન ભર્તું
+પાલક કોન કૅપ્સિકમ
+મટર કૅપ્સિકમ
+વેજીટેબલ દિવાની
+શાહી વેજ.
+કૅપ્સિકમ ટમેટો
+કોન ભર્તું
+આલુ કૅપ્સિકમ
+મટર પાલક
+મિક્સ વેજિટેબલ*/
 
 // પંજાબી વેરિયેટી
+/*Paneer_Butter_Masala
+Paneer_Tikka_Masala
+Paneer_Bhurji
+Paneer_Toufani
+Paneer_Angara
+Paneer_Kadai
+Paneer_Handi
+Paneer_Do_Pyaza
+Paneer_Twa_Masala
+Paneer_Hariyali
+Paneer_Chatpata
+Paneer_Jaipuri
+Paneer_Makhani
+Paneer_Pasanda
+Paneer_Lajwab
+Paneer_Patiala
+Paneer_Khada_Masala
+Paneer_Korma
+Paneer_Lasania
+Paneer_Kolapuri
+Paneer_Mushroom_Masala
+Paneer_Darbari
+Paneer_Mumtaj
+Paneer_Lajwabdar
+Paneer_Cashew_Cheese_Masala
+Shahi_Paneer
+Palak_Paneer
+Patar_Paneer
+Cheese_Paneer
+Cheese_Rajwadi
+Cheese_Anguri
+Cheese_Paneer_Masala
+Cheese_Butter_Masala
+Paneer_Silsila
+Paneer_Balti
+Paneer_Tiranga
+Jeera_Aloo
+Dam_Aloo
+Tomato_Kon_Bharta
+Baby_Kon_Butter_Masala
+Channa_Masala
+Cashew_Curry_Masala
+Cashew_Butter_Masala
+Cashew_Masala
+Cashew_Paneer
+Cashew_Kashmiri
+Coconut _Cashew
+પનીર બટર મસાલા
+પનીર ટિક્કા મસાલા
+પનીર ભુરજી
+પનીર તૂફાની
+પનીર અંગારા
+પનીર કડાઈ
+પનીર હંડી
+પનીર દો પ્યાઝા
+પનીર ટવા મસાલા
+પનીર હરિયાળી
+પનીર ચટપટા
+પનીર જયપુરી
+પનીર મખાણી
+પનીર પાસાંડા
+પનીર લાજવાબ
+પનીર પટિયાલા
+પનીર ખડા મસાલા
+પનીર કોર્મા
+પનીર લસણિયા
+પનીર કોલાપુરી
+પનીર મશરૂમ મસાલા
+પનીર દરબારી
+પનીર મુમ્તાજ
+પનીર લાજવાબદાર
+પનીર કાજુ ચીઝ મસાલા
+શાહી પનીર
+પાલક પનીર
+મટર પનીર
+ચીઝ પનીર
+ચીઝ રાજવાડી
+ચીઝ અંગૂરી
+ચીઝ પનીર મસાલા
+ચીઝ બટર મસાલા
+પનીર સિલસીલા
+પનીર બલ્ટી
+પનીર તિરંગા
+જીરા આલુ
+દામ આલુ
+ટમેટો કોન ભર્તા
+બેબી કોન બટર મસાલા
+ચણા મસાલા
+કાજુ કરી મસાલા
+કાજુ બટર મસાલા
+કાજુ મસાલા
+કાજુ પનીર
+કાજુ કાશ્મીરી (મીઠુ)
+કોયા કાજુ (મીઠુ)*/
 
 // ટંડૂરી
 const Garlic_Naan = 'લસણ નાન';
@@ -140,8 +382,110 @@ const Butter_Tawa_Paratha = 'બટર તવા પરોઠા';
 const Fry_Paratha = 'ફ્રાય પરોઠા';
 
 // ચાઇનીઝ
+/*Chinese_Mix
+American_Chopsi
+Manchurian_Noodles
+Manchurian_Fry_Noodles
+Sagewan_Noodles
+Sagewan_Rice
+Veg_Fry_Rice
+Veg_Hakka_Noodles
+Veg_Manchurian_Gravy
+Baby_Corn_Chilli_Dry
+Paneer_Chilli_Dry
+Vegetable_Manchurian_Dry
+Paneer_Chilli_Gravy
+Vegetable_Manchurian_Gravy
+Paneer_Dry
+Paneer_Manchurian_Dry
+Mushroom_Chilli_Dry
+Spring_Roll
+Potato_Chilli_Dry
+Dragon_Potato
+Vegetable_Crispy_Dry
+ચાઇનીઝ ભેળ
+અમેરિકન ચોપસી
+મંચુરિયન નૂડલ્સ
+મંચુરિયન ફ્રાય નૂડલ્સ
+સેજવાન નૂડલ્સ
+સેજવાન રાઈસ
+વેજ ફ્રાય રાઈસ
+વેજ હાકા નૂડલ્સ
+વેજ. મનચુરિયન ગ્રેવી
+બેબી કોર્ન ચિલી ડ્રાય
+પનીર ચિલી ડ્રાય
+વેજીટેબલ મંચુરિયન ડ્રાય
+પનીર ચિલી ગ્રેવી
+વેજીટેબલ મંચુરિયન ગ્રેવી
+પનીર 65 ડ્રાય
+પનીર મંચુરિયન ડ્રાય
+માસરૂમ ચિલી ડ્રાય
+સ્પ્રિંગ રોલ
+પોટેટો ચિલી ડ્રાય
+ડ્રેગન પોટેટો
+વેજીટેબલ ક્રિસ્પી ડ્રાય*/
 
 // સાઉથ ઇન્ડિયન
+/*Dosa
+Fancy_Dosa
+Vibrant_Gujarat
+Masala_Dosa
+Masala_Dosa
+Mesur_Masala_Dosa
+Mesur_Sada_Dosa
+Cheese_Masala_Dosa
+Sweet_Corn_Dosa
+Mini_Roll_Dosa
+Mini_Roll_Masala_Dosa
+Gotla_Dosa
+Mini_Tirvel_Masala_Dosa
+Mini_Tirvel_Plain_Dosa
+Jumbo_Masala_Dosa
+Jumbo_Plain_Dosa
+Pizza_Masala_Dosa
+Cheese_Roll_Masala_Dosa
+Cheese_Roll_Plain_Dosa
+Cheese_Messuri_Masala_Dosa
+Cheese_Messuri_Plain_Dosa
+Kesari_Masala_Dosa
+Idli_Sambar
+Medu_Vada
+Dal_Vada
+Tomato_Uttapam
+Onion_Uttapam
+Masala_Uttapam
+Mix_Uttapam
+Sweet_Kashmiri_Uttapam
+ડોસા
+ફેન્સી ડોસા
+વાઈબ્રન્ટ ગુજરાત
+મસાલા ડોસા
+મસાલા ડોસા
+મેસુર મસાલા ડોસા
+મેસુર સાદા ડોસા
+ચીઝ મસાલા ડોસા
+સ્વીટ કોર્ન ડોસા
+મિની રોલ ડોસા
+મિની રોલ મસાલા ડોસા
+ગોટલા ડોસા
+મિની ટિર્વેલ મસાલા ડોસા
+મિની ટિર્વેલ સાદા ડોસા
+જમ્બો મસાલા ડોસા
+જમ્બો સાદા ડોસા
+પિઝા મસાલા ડોસા
+ચીઝ રોલ મસાલા ડોસા
+ચીઝ રોલ સાદા ડોસા
+ચીઝ મેસુરી મસાલા ડોસા
+ચીઝ મેસુરી સાદા ડોસા
+કેસરી મસાલા ડોસા
+ઇડલી-સાંભર
+મેડુ વડા
+દાળ વડા
+ટમાટો ઉત્તપમ
+ઓનિયન ઉત્તપમ
+મસાલા ઉત્તપમ
+મિક્સ ઉત્તપમ
+સ્વીટ કાશ્મીરી ઉત્તપમ*/
 
 // ફરસાણ
 const Mix_Bhajiya = 'મિક્સ ભજિયા';
@@ -281,6 +625,80 @@ const Local = 'લોકલ';
 const Amt = '';
 
 // સ્પે. લીકવીડ ફ્લેવર
+/*વ્હા. બાસુંદી
+વ્હાઈટ ડ્રા. બાસુંદી
+કેસર ડ્રા. બાસુંદી
+વ્હાઈટ ડ્રા. રસમાધુરી
+ક્રીમ પાઇના ચીકી
+કેશર ડ્રા. રસમાધુરી
+ડ્રા. ક્રીમ સલાડ
+ડ્રા. વેનીલા શાહી
+ડ્રા. બટર લચ્છા રબડી
+પાઈના કોકોનટ રબડી
+કીંગ્સ & હની લચ્છા રબડી
+કેશર લચ્છા રબડી
+ડ્રા. સીતાફળ બાસુંદી
+ક્રીમ કેશર ઠંડાઈ
+અમેરીકન રબડી
+રેડ વેલવેટ રબડી
+રજવાડી રબડી
+મલાઈ કોકોનટ રબડી
+ડ્રા. મેંગો પી
+રીયલ સ્ટ્રોબેરી ડ્રીપ
+રસમલાઈ રબડી
+સ્ટ્રોબેરી આલ્મંડ રબડી
+ફ્રૂટ પુડીંગ
+માવા ફેન્ટાસી
+ફ્રેનબેરી પંચ લીકવીડ
+મલાઈ ફાલુદા
+ચાંદની રબડી
+મેંગો હીરાકણી
+પંચામૃત રબડી
+કાજુ કરોલી
+એક્ઝોટીકા રબડી
+રોઝ રજવાડી
+ડ્રેફન ફુટ ખજાના
+કિવી બોનાન્ઝા રબડી
+ઘેવર કાજુ રબડી
+રજવાડી પીસ્તા રબડી
+અંજીર પુડીંગ
+Wah. Basundi
+White Dr. Basundi
+Saffron Dr. Basundi
+White Dr. Rasmadhuri
+Cream Pie Cheeky
+Saffron Dr. Rasmadhuri
+Dr. Cream Salad
+Dr. Vanilla Shahi
+Dr. Butter Lachcha Rabdi
+Pie Coconut Rabdi
+Kings & Honey Lachcha Rabdi
+Saffron Lachcha Rabdi
+Dr. Sitafal Basundi
+Cream Kashgar Thandai
+American Rabdi
+Red Velvet Rabdi
+Rajwadi Rabdi
+Malai Coconut Rabdi
+Dr. Mango P
+Real Strawberry Drip
+Rasmalai Rabdi
+Strawberry Almond Rabdi
+Fruit Pudding
+Mawa Fantasy
+Raspberry Punch Liquid
+Malai Falooda
+Chandni Rabdi
+Mango Hirakani
+Panchamrut Rabdi
+Kaju Karoli
+Exotica Rabdi
+Rose Rajwadi
+Drafen Foot Treasures
+Kiwi Bonanza Rabdi
+Ghevar Cashew Rabdi
+Rajwadi Pistachio Rabdi
+Fig Pudding*/
 
 // સ્પે.લીકવીડ પ્લાઝા ફ્લેવર
 const Calcutta_Plaza = 'ડ્રા. કલકતી પ્લાઝા';
@@ -297,6 +715,82 @@ const Pina_Diamond_Rabdi = 'પાઈના ડાયમંડ રબડી';
 const Lychee_Diamond_Rabdi = 'લીચી ડાયમંડ રબડી';
 
 // પીસમાં ડ્રાયફ્રુટ ફ્લેવર
+/*Rasmadhuru
+Malai Butter Ladoo
+Welcome Cake
+Orange Ladoo
+Pina Ching
+Pineapple Chilli Ladoo
+Pineapple Sangam
+Chocolate Cassata
+Bridge Ladoo
+Choco Ball
+Silver Roll
+Orange Cassata
+Malai Fig Cut
+Rose Cassata
+Sangam Katri
+Rajakamal
+Fig Kalam
+Dry Fruit Cassata
+Baghban Fruit
+Trirangabhog
+Choco Chand
+Pistachio Cutlets
+Milk Cake Roll
+Roasted Butterscotch Ladoo
+Kesher Apple
+Koot Cassata
+Lychee Cocoa Magic
+Almond Honey Ball
+Pistachio Cashew Ball
+Roasted Almond Ladoo
+Roasted Pineapple Ball
+Fig Strawberry
+Dr. Basket
+Roasted Pineapple Ball
+Roasted Choco Basket
+Choco Chandra Patra
+Milk Rose Ball
+Pistachio Cake
+રસમધુરુ
+મલાઈ બટર લાડુ
+વેલકમ કેક
+ઓરેંજ લાડુ
+પાઇના ચીંગ
+પાઇનેપલ ચીલી લાડુ
+પાઈનપલ સંગમ
+ચોકલેટ કસાટા
+બ્રીજ લાડુ
+ચોકો બોલ
+સીલ્વર રોલ
+ઓરેંજ કસાટા
+મલાઈ અંજીર કટ
+રોઝ કસાટા
+સંગમ કત્રી
+રાજકમલ
+અંજીર કલમ
+ડ્રાયફ્રૂટ કસાટા
+બાગબાન ફ્રુટ
+ત્રિરંગાભોગ
+ચોકો ચાંદ
+પીસ્તા કટલેસ
+મીલ્ક કેક રોલ
+રોસ્ટેડ બટરસ્કોચ લાડુ
+કેશર એપલ
+કુટ કસાટા
+લીચી કોકો મેજીક
+આલમંડ હની બોલ
+પીસ્તા કાજુ બોલ
+રોસ્ટડ બદામ લાડુ
+રો.પાઇનેપલ બોલ
+અંજીર સ્ટ્રોબેરી
+ડ્રા. બાસ્કેટ
+રો.પાઇનેપલ બોલ
+રોસ્ટેડ ચોકો બાસ્કેટ
+ચોકો ચંદ્ર પાત્રા
+મીલ્ક રોઝ બોલ
+પીસ્તા કેક*/
 
 // બરફીમાં ફ્લેવર
 const Topra_Pak = 'ટોપરા પાક';
@@ -370,6 +864,54 @@ const Pistachio_Pyramid = 'પીસ્તા પીરામીડ';
 const Dr_Munafa = 'ડ્રા.મુનાફા';
 
 // આઇસ્ક્રીમ ફલેવર
+/*Vanilla
+Brownie_Break_Cookies_Cream
+Red_Velvet
+Cashew_Roseberry
+Rose_Petal
+American_Nuts
+Panchamrut
+Bridge_Mohan
+Roasted_Almonds
+Jamfruit
+Rajbhog
+Mawa_Almonds
+Shahipan_Masala
+Strawberry_Cheese_Cake
+Cashew_Creamy_Balls
+Frosty_Black_Currant
+Baklava_Tumtum
+Drycut_King
+Ferrero_Rocher
+Exotica_King
+Royal_Coconut
+Black_Jambun
+Sugar_Free_Vanilla
+Sugar_Free_Rajbhog
+વેનીલા
+બ્રાઉની બ્રેક કુકીઝ & ક્રીમ
+રેડવેલવેટ
+કાજુ રોઝબેરી
+રોઝ પેટલ
+અમેરીકન નટસ
+પંચામૃત
+બ્રીજ મોહન
+રોસ્ટડ આમંડ
+જામફળ
+રાજભોગ
+માવા બદામ
+શાહીપાન મસાલા
+સ્ટ્રોબેરી ચીઝ કેક
+કાજુ ક્રીમી બોલ
+ફ્રોસ્ટીક બ્લેક કરંટ
+બકલાવા ટમટમ
+ડ્રાયકુટ કીંગ
+ફરેરો રોચર
+એકઝોટીકા કીંગ
+રોયલ કોકોનેટ
+બ્લેક જાંબુન
+સુગર ફ્રી વેનીલા
+સુગર ફ્રી રાજભોગ*/
 
 // લાઈવ બ્રાઉની.લાવા
 const Choco_Lava_Cake = 'ચોકો લાવા કેક';
