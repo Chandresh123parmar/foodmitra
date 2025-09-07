@@ -1,0 +1,1 @@
+const splashLogo = 'assets/images/kitchen.png';
