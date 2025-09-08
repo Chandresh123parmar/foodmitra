@@ -27,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(systemNavigationBarColor: Colors.transparent,statusBarColor: Colors.transparent));
 
     Future.delayed(Duration(seconds: 2),() async{
-Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => Bottombarnavigatorscreen()));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => Bottombarnavigatorscreen()));
     });
   }
 
@@ -42,8 +42,8 @@ Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => Bottombarna
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
-              Color(customColor("#334d50")),
-              Color(customColor("#cbcaa5")),
+              Color(customColor("#dce9c5")),
+              Color(customColor("#ffffff")),
             ],
           ),
         ),

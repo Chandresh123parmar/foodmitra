@@ -1,3 +1,6 @@
+
+const Category = 'કેટેગરી માટે ખોજો';
+
 const Biting = 'બાઇટિંગ';
 const Soup = 'સૂપ';
 const Starter = 'સ્ટાર્ટર';
@@ -50,7 +53,6 @@ const Butter_Flavor = 'મખ્ખન ફલેવર';
 const Special_Bengali_Flavor = 'સ્પે. બંગાળી ફલેવર';
 const Petha_Ma_Flavor = 'પેઠા માં ફલેવર';
 
-
 // બાઇટિંગ
 const Lollipop = 'લોલીપોપ';
 const Cheeseball = 'ચીઝબોલ';
@@ -95,258 +97,136 @@ const Channa = 'ચણા';
 const Mug = 'મગ';
 const Choli = 'ચોળી';
 const Sabaras_Chana = 'સાબરસ ચણા';
-const al_Chana = 'દાળ ચણા';
+const Dal_Chana = 'દાળ ચણા';
 const Urad_dal = 'અડદ ની સરિદળ દાળ';
 const Wals_vegetable = 'વાલનું શાક';
 const Math = 'મઠ';
 
 // કાઠિયાવાડી
-/*
-Kadhi_Khichdi
-Wagharelo_Rotlo
-Masala_Rotlo
-Lasagna_Potatoes
-Cabbage_Masala
-Onion_Masala
-Mixed_Vegetables
-Eggplant_Stuffed
-Eggplant_Filling
-Eggplant_Masala
-Girnari_Khichdi
-bhinda_Masala
-Sev_Onion
-Aloo_Brinjal_Rasawala
-Curd_bhinda
-Kadhi_Pakora
-Aloo_Palak
-Mug_Masala
-Sev_Masala
-Sev_Tomato
-Potato_Rasawala
-Dhokri
-Plain_Spinach
-Dried_Vegetables
-Aloo_Peas
-Tomato_Onion
-Masala_Khichdi
-Yogi_Tikharai
-Mug_Fry
-Bhinda_Fry
-PlainKhichdi
-Undhiu
-Ringan_Potato_Filled
-Dhokli
-Guar_Potato
-Bhinda_Vegetable
-Tomato_Vegetable
-Dungari_Potato
-Cabbage_Potato
-Flower_Potato
-Chori_Batka
-Mithi_Bhaji
-Pava_Bhaji
-કઢી ખીચડી
-વઘારેલો રોટલો
-મસાલા રોટલો
-લસાણીયા બટાકા
-કોબીટ્ચ મસાલા
-ડુંગળી મસાલા
-મિક્સ ભાજી
-બેગણ ભરેલા
-બેગણ ભરતા
-બેગણ મસાલા
-ગીરનારી ખીચડી
-ભીંડા મસાલા
-સેવ ડુંગળી
-આલુ બેગણ રસાવાલા
-દહી ભીંડા
-કઢી પકોડા
-આલુ પાલક
-મગ મસાલા
-સેવ મસાલા
-સેવ ટમેટો
-બટાકા રસવાલા
-ઢોકરી
-પ્લેન પાલક
-સૂકીભાજી
-આલુ મટર
-ટમેટો ડુંગળી
-મસાલા ખીચડી
-દહીં તીખારી
-મગ ફ્રાય
-ભીંડા ફ્રાય
-પ્લેન ખીચડી
-ઉંધિયુ
-રિંગણ બટેકા ભરેલું
-ઢોકળી
-ગવાર બટેકા
-ભીંડા નું શાક
-ટામેટાનું શાક
-ડુંગરી બટેકા
-કોબી બટેકા
-ફ્લાવર બટેકા
-ચોરી બેટકા
-મીઠી ભાજી
-પાવભાજી
-*/
+const Kadhi_Khichdi = 'કઢી ખીચડી';
+const Wagharelo_Rotlo = 'વઘારેલો રોટલો';
+const Masala_Rotlo = 'મસાલા રોટલો';
+const Lasagna_Potatoes = 'લસાણીયા બટાકા';
+const Cabbage_Masala = 'કોબીટ્ચ મસાલા';
+const Onion_Masala = 'ડુંગળી મસાલા';
+const Mixed_Vegetables = 'મિક્સ ભાજી';
+const Eggplant_Stuffed = 'બેગણ ભરેલા';
+const Eggplant_Filling = 'બેગણ ભરતા';
+const Eggplant_Masala = 'બેગણ મસાલા';
+const Girnari_Khichdi = 'ગીરનારી ખીચડી';
+const bhinda_Masala = 'ભીંડા મસાલા';
+const Sev_Onion = 'સેવ ડુંગળી';
+const Aloo_Brinjal_Rasawala = 'આલુ બેગણ રસાવાલા';
+const Curd_bhinda = 'દહી ભીંડા';
+const Kadhi_Pakora = 'કઢી પકોડા';
+const Aloo_Palak = 'આલુ પાલક';
+const Mug_Masala = 'મગ મસાલા';
+const Sev_Masala = 'સેવ મસાલા';
+const Sev_Tomato = 'સેવ ટમેટો';
+const Potato_Rasawala = 'બટાકા રસવાલા';
+const Dhokri = 'ઢોકરી';
+const Plain_Spinach = 'પ્લેન પાલક';
+const Dried_Vegetables = 'સૂકીભાજી';
+const Aloo_Peas = 'આલુ મટર';
+const Tomato_Onion = 'ટમેટો ડુંગળી';
+const Masala_Khichdi = 'મસાલા ખીચડી';
+const Yogi_Tikharai = 'દહીં તીખારી';
+const Mug_Fry = 'મગ ફ્રાય';
+const Bhinda_Fry = 'ભીંડા ફ્રાય';
+const PlainKhichdi = 'પ્લેન ખીચડી';
+const Undhiu = 'ઉંધિયુ';
+const Ringan_Potato_Filled = 'રિંગણ બટેકા ભરેલું';
+const Dhokli = 'ઢોકળી';
+const Guar_Potato = 'ગવાર બટેકા';
+const Bhinda_Vegetable = 'ભીંડા નું શાક';
+const Tomato_Vegetable = 'ટામેટાનું શાક';
+const Dungari_Potato = 'ડુંગરી બટેકા';
+const Cabbage_Potato = 'કોબી બટેકા';
+const Flower_Potato = 'ફ્લાવર બટેકા';
+const Chori_Batka = 'ચોરી બેટકા';
+const Mithi_Bhaji = 'મીઠી ભાજી';
+const PavaBhaji = 'પાવભાજી';
 
 // વેજીટેબલ વેરિયેટી
-/*Vegetable_Darbari
-Vegetable_Jaipuri
-Vegetable_Singaporean
-Vegetable_Toofani
-Vegetable_Kolapuri
-Vegetable_Kadai
-Vegetable_Tawa Masala
-Vegetable_Handi
-Vegetable_Hyderabadi
-Vegetable_Makhanwala
-Vegetable_Rajrani
-Vegetable_Keema_Masala
-Vegetable_Hariyali
-Vegetable_Navratna Korma
-Vegetable_Jafrani
-Vegetable_Mushroom_Masala
-Vegetable_Korma
-Vegetable_Hungama
-Vegetable_Angara
-Vegetable_Tiranga
-Tomato_con_bortu
-Spinach_con_capsicum
-Peacock_capsicum
-Vegetable_Diwani
-Shahi_Veg
-Capsicum_Tomato
-Con_stuffing
-Aloo_capsicum
-Peacock_spinach
-Mix_vegetable
-વેજીટેબલ દરબારી
-વેજીટેબલ જયપુરી
-વેજીટેબલ સિંગાપુરી
-વેજીટેબલ તૂફાની
-વેજીટેબલ કોળાપુરી
-વેજીટેબલ કડાઈ
-વેજીટેબલ તવા મસાલા
-વેજીટેબલ હંડી
-વેજીટેબલ હૈડેરાબાદી
-વેજીટેબલ મખણવાલા
-વેજીટેબલ રાજરાણી
-વેજીટેબલ કિમા મસાલા
-વેજીટેબલ હરિયાળી
-વેજીટેબલ નવરત્ન કોરમા
-વેજીટેબલ જાફરાની
-વેજીટેબલ મશરૂમ મસાલા
-વેજીટેબલ કોરમા
-વેજીટેબલ હંગામા
-વેજીટેબલ અંગારા
-વેજીટેબલ તિરંગા
-ટમેટો કોન ભર્તું
-પાલક કોન કૅપ્સિકમ
-મટર કૅપ્સિકમ
-વેજીટેબલ દિવાની
-શાહી વેજ.
-કૅપ્સિકમ ટમેટો
-કોન ભર્તું
-આલુ કૅપ્સિકમ
-મટર પાલક
-મિક્સ વેજિટેબલ*/
+const Vegetable_Darbari = 'વેજીટેબલ દરબારી';
+const Vegetable_Jaipuri = 'વેજીટેબલ જયપુરી';
+const Vegetable_Singaporean = 'વેજીટેબલ સિંગાપુરી';
+const Vegetable_Toofani = 'વેજીટેબલ તૂફાની';
+const Vegetable_Kolapuri = 'વેજીટેબલ કોળાપુરી';
+const Vegetable_Kadai = 'વેજીટેબલ કડાઈ';
+const Vegetable_Tawa_Masala = 'વેજીટેબલ તવા મસાલા';
+const Vegetable_Handi = 'વેજીટેબલ હંડી';
+const Vegetable_Hyderabadi = 'વેજીટેબલ હૈડેરાબાદી';
+const Vegetable_Makhanwala = 'વેજીટેબલ મખણવાલા';
+const Vegetable_Rajrani = 'વેજીટેબલ રાજરાણી';
+const Vegetable_Keema_Masala = 'વેજીટેબલ કિમા મસાલા';
+const Vegetable_Hariyali = 'વેજીટેબલ હરિયાળી';
+const Vegetable_Navratna_Korma = 'વેજીટેબલ નવરત્ન કોરમા';
+const Vegetable_Jafrani = 'વેજીટેબલ જાફરાની';
+const Vegetable_Mushroom_Masala = 'વેજીટેબલ મશરૂમ મસાલા';
+const Vegetable_Korma = 'વેજીટેબલ કોરમા';
+const Vegetable_Hungama = 'વેજીટેબલ હંગામા';
+const Vegetable_Angara = 'વેજીટેબલ અંગારા';
+const Vegetable_Tiranga = 'વેજીટેબલ તિરંગા';
+const Tomato_con_bortu = 'ટમેટો કોન ભર્તું';
+const Spinach_con_capsicum = 'પાલક કોન કૅપ્સિકમ';
+const Peacock_capsicum = 'મટર કૅપ્સિકમ';
+const Vegetable_Diwani = 'વેજીટેબલ દિવાની';
+const Shahi_Veg = 'શાહી વેજ.';
+const Capsicum_Tomato = 'કૅપ્સિકમ ટમેટો';
+const Con_stuffing = 'કોન ભર્તું';
+const Aloo_capsicum = 'આલુ કૅપ્સિકમ';
+const Peacock_spinach = 'મટર પાલક';
+const Mix_vegetable = 'મિક્સ વેજિટેબલ';
 
 // પંજાબી વેરિયેટી
-/*Paneer_Butter_Masala
-Paneer_Tikka_Masala
-Paneer_Bhurji
-Paneer_Toufani
-Paneer_Angara
-Paneer_Kadai
-Paneer_Handi
-Paneer_Do_Pyaza
-Paneer_Twa_Masala
-Paneer_Hariyali
-Paneer_Chatpata
-Paneer_Jaipuri
-Paneer_Makhani
-Paneer_Pasanda
-Paneer_Lajwab
-Paneer_Patiala
-Paneer_Khada_Masala
-Paneer_Korma
-Paneer_Lasania
-Paneer_Kolapuri
-Paneer_Mushroom_Masala
-Paneer_Darbari
-Paneer_Mumtaj
-Paneer_Lajwabdar
-Paneer_Cashew_Cheese_Masala
-Shahi_Paneer
-Palak_Paneer
-Patar_Paneer
-Cheese_Paneer
-Cheese_Rajwadi
-Cheese_Anguri
-Cheese_Paneer_Masala
-Cheese_Butter_Masala
-Paneer_Silsila
-Paneer_Balti
-Paneer_Tiranga
-Jeera_Aloo
-Dam_Aloo
-Tomato_Kon_Bharta
-Baby_Kon_Butter_Masala
-Channa_Masala
-Cashew_Curry_Masala
-Cashew_Butter_Masala
-Cashew_Masala
-Cashew_Paneer
-Cashew_Kashmiri
-Coconut _Cashew
-પનીર બટર મસાલા
-પનીર ટિક્કા મસાલા
-પનીર ભુરજી
-પનીર તૂફાની
-પનીર અંગારા
-પનીર કડાઈ
-પનીર હંડી
-પનીર દો પ્યાઝા
-પનીર ટવા મસાલા
-પનીર હરિયાળી
-પનીર ચટપટા
-પનીર જયપુરી
-પનીર મખાણી
-પનીર પાસાંડા
-પનીર લાજવાબ
-પનીર પટિયાલા
-પનીર ખડા મસાલા
-પનીર કોર્મા
-પનીર લસણિયા
-પનીર કોલાપુરી
-પનીર મશરૂમ મસાલા
-પનીર દરબારી
-પનીર મુમ્તાજ
-પનીર લાજવાબદાર
-પનીર કાજુ ચીઝ મસાલા
-શાહી પનીર
-પાલક પનીર
-મટર પનીર
-ચીઝ પનીર
-ચીઝ રાજવાડી
-ચીઝ અંગૂરી
-ચીઝ પનીર મસાલા
-ચીઝ બટર મસાલા
-પનીર સિલસીલા
-પનીર બલ્ટી
-પનીર તિરંગા
-જીરા આલુ
-દામ આલુ
-ટમેટો કોન ભર્તા
-બેબી કોન બટર મસાલા
-ચણા મસાલા
-કાજુ કરી મસાલા
-કાજુ બટર મસાલા
-કાજુ મસાલા
-કાજુ પનીર
-કાજુ કાશ્મીરી (મીઠુ)
-કોયા કાજુ (મીઠુ)*/
+const Paneer_Butter_Masala = 'પનીર બટર મસાલા';
+const Paneer_Tikka_Masala = 'પનીર ટિક્કા મસાલા';
+const Paneer_Bhurji = 'પનીર ભુરજી';
+const Paneer_Toufani = 'પનીર તૂફાની';
+const Paneer_Angara = 'પનીર અંગારા';
+const Paneer_Kadai = 'પનીર કડાઈ';
+const Paneer_Handi = 'પનીર હંડી';
+const Paneer_Do_Pyaza = 'પનીર દો પ્યાઝા';
+const Paneer_Twa_Masala = 'પનીર ટવા મસાલા';
+const Paneer_Hariyali = 'પનીર હરિયાળી';
+const Paneer_Chatpata = 'પનીર ચટપટા';
+const Paneer_Jaipuri = 'પનીર જયપુરી';
+const Paneer_Makhani = 'પનીર મખાણી';
+const Paneer_Pasanda = 'પનીર પાસાંડા';
+const Paneer_Lajwab = 'પનીર લાજવાબ';
+const Paneer_Patiala = 'પનીર પટિયાલા';
+const Paneer_Khada_Masala = 'પનીર ખડા મસાલા';
+const Paneer_Korma = 'પનીર કોર્મા';
+const Paneer_Lasania = 'પનીર લસણિયા';
+const Paneer_Kolapuri = 'પનીર કોલાપુરી';
+const Paneer_Mushroom_Masala = 'પનીર મશરૂમ મસાલા';
+const Paneer_Darbari = 'પનીર દરબારી';
+const Paneer_Mumtaj = 'પનીર મુમ્તાજ';
+const Paneer_Lajwabdar = 'પનીર લાજવાબદાર';
+const Paneer_Cashew_Cheese_Masala = 'પનીર કાજુ ચીઝ મસાલા';
+const Shahi_Paneer = 'શાહી પનીર';
+const Palak_Paneer = 'પાલક પનીર';
+const Patar_Paneer = 'મટર પનીર';
+const Cheese_Paneer = 'ચીઝ પનીર';
+const Cheese_Rajwadi = 'ચીઝ રાજવાડી';
+const Cheese_Anguri = 'ચીઝ અંગૂરી';
+const Cheese_Paneer_Masala = 'ચીઝ પનીર મસાલા';
+const Cheese_Butter_Masala = 'ચીઝ બટર મસાલા';
+const Paneer_Silsila = 'પનીર સિલસીલા';
+const Paneer_Balti = 'પનીર બલ્ટી';
+const Paneer_Tiranga = 'પનીર તિરંગા';
+const Jeera_Aloo = 'જીરા આલુ';
+const Dam_Aloo = 'દામ આલુ';
+const Tomato_Kon_Bharta = 'ટમેટો કોન ભર્તા';
+const Baby_Kon_Butter_Masala = 'બેબી કોન બટર મસાલા';
+const Channa_Masala = 'ચણા મસાલા';
+const Cashew_Curry_Masala = 'કાજુ કરી મસાલા';
+const Cashew_Butter_Masala = 'કાજુ બટર મસાલા';
+const Cashew_Masala = 'કાજુ મસાલા';
+const Cashew_Paneer = 'કાજુ પનીર';
+const Cashew_Kashmiri = 'કાજુ કાશ્મીરી (મીઠુ)';
+const Coconut_Cashew = 'કોયા કાજુ (મીઠુ)';
 
 // ટંડૂરી
 const Garlic_Naan = 'લસણ નાન';
@@ -382,110 +262,58 @@ const Butter_Tawa_Paratha = 'બટર તવા પરોઠા';
 const Fry_Paratha = 'ફ્રાય પરોઠા';
 
 // ચાઇનીઝ
-/*Chinese_Mix
-American_Chopsi
-Manchurian_Noodles
-Manchurian_Fry_Noodles
-Sagewan_Noodles
-Sagewan_Rice
-Veg_Fry_Rice
-Veg_Hakka_Noodles
-Veg_Manchurian_Gravy
-Baby_Corn_Chilli_Dry
-Paneer_Chilli_Dry
-Vegetable_Manchurian_Dry
-Paneer_Chilli_Gravy
-Vegetable_Manchurian_Gravy
-Paneer_Dry
-Paneer_Manchurian_Dry
-Mushroom_Chilli_Dry
-Spring_Roll
-Potato_Chilli_Dry
-Dragon_Potato
-Vegetable_Crispy_Dry
-ચાઇનીઝ ભેળ
-અમેરિકન ચોપસી
-મંચુરિયન નૂડલ્સ
-મંચુરિયન ફ્રાય નૂડલ્સ
-સેજવાન નૂડલ્સ
-સેજવાન રાઈસ
-વેજ ફ્રાય રાઈસ
-વેજ હાકા નૂડલ્સ
-વેજ. મનચુરિયન ગ્રેવી
-બેબી કોર્ન ચિલી ડ્રાય
-પનીર ચિલી ડ્રાય
-વેજીટેબલ મંચુરિયન ડ્રાય
-પનીર ચિલી ગ્રેવી
-વેજીટેબલ મંચુરિયન ગ્રેવી
-પનીર 65 ડ્રાય
-પનીર મંચુરિયન ડ્રાય
-માસરૂમ ચિલી ડ્રાય
-સ્પ્રિંગ રોલ
-પોટેટો ચિલી ડ્રાય
-ડ્રેગન પોટેટો
-વેજીટેબલ ક્રિસ્પી ડ્રાય*/
+const Chinese_Mix = 'ચાઇનીઝ ભેળ';
+const American_Chopsi = 'અમેરિકન ચોપસી';
+const Manchurian_Noodles = 'મંચુરિયન નૂડલ્સ';
+const Manchurian_Fry_Noodles = 'મંચુરિયન ફ્રાય નૂડલ્સ';
+const Sagewan_Noodles = 'સેજવાન નૂડલ્સ';
+const Sagewan_Rice = 'સેજવાન રાઈસ';
+const Veg_Fry_Rice = 'વેજ ફ્રાય રાઈસ';
+const Veg_Hakka_Noodles = 'વેજ હાકા નૂડલ્સ';
+const Veg_Manchurian_Gravy = 'વેજ. મનચુરિયન ગ્રેવી';
+const Baby_Corn_Chilli_Dry = 'બેબી કોર્ન ચિલી ડ્રાય';
+//const Paneer_Chilli_Dry = 'પનીર ચિલી ડ્રાય';
+const Vegetable_Manchurian_Dry = 'વેજીટેબલ મંચુરિયન ડ્રાય';
+const Paneer_Chilli_Gravy = 'પનીર ચિલી ગ્રેવી';
+const Vegetable_Manchurian_Gravy = 'વેજીટેબલ મંચુરિયન ગ્રેવી';
+const Paneer_Dry = 'પનીર 65 ડ્રાય';
+//const Paneer_Manchurian_Dry = 'પનીર મંચુરિયન ડ્રાય';
+const Mushroom_Chilli_Dry = 'માસરૂમ ચિલી ડ્રાય';
+//const Spring_Roll = 'સ્પ્રિંગ રોલ';
+//const Potato_Chilli_Dry = 'પોટેટો ચિલી ડ્રાય';
+//const Dragon_Potato = 'ડ્રેગન પોટેટો';
+const Vegetable_Crispy_Dry = 'વેજીટેબલ ક્રિસ્પી ડ્રાય';
 
 // સાઉથ ઇન્ડિયન
-/*Dosa
-Fancy_Dosa
-Vibrant_Gujarat
-Masala_Dosa
-Masala_Dosa
-Mesur_Masala_Dosa
-Mesur_Sada_Dosa
-Cheese_Masala_Dosa
-Sweet_Corn_Dosa
-Mini_Roll_Dosa
-Mini_Roll_Masala_Dosa
-Gotla_Dosa
-Mini_Tirvel_Masala_Dosa
-Mini_Tirvel_Plain_Dosa
-Jumbo_Masala_Dosa
-Jumbo_Plain_Dosa
-Pizza_Masala_Dosa
-Cheese_Roll_Masala_Dosa
-Cheese_Roll_Plain_Dosa
-Cheese_Messuri_Masala_Dosa
-Cheese_Messuri_Plain_Dosa
-Kesari_Masala_Dosa
-Idli_Sambar
-Medu_Vada
-Dal_Vada
-Tomato_Uttapam
-Onion_Uttapam
-Masala_Uttapam
-Mix_Uttapam
-Sweet_Kashmiri_Uttapam
-ડોસા
-ફેન્સી ડોસા
-વાઈબ્રન્ટ ગુજરાત
-મસાલા ડોસા
-મસાલા ડોસા
-મેસુર મસાલા ડોસા
-મેસુર સાદા ડોસા
-ચીઝ મસાલા ડોસા
-સ્વીટ કોર્ન ડોસા
-મિની રોલ ડોસા
-મિની રોલ મસાલા ડોસા
-ગોટલા ડોસા
-મિની ટિર્વેલ મસાલા ડોસા
-મિની ટિર્વેલ સાદા ડોસા
-જમ્બો મસાલા ડોસા
-જમ્બો સાદા ડોસા
-પિઝા મસાલા ડોસા
-ચીઝ રોલ મસાલા ડોસા
-ચીઝ રોલ સાદા ડોસા
-ચીઝ મેસુરી મસાલા ડોસા
-ચીઝ મેસુરી સાદા ડોસા
-કેસરી મસાલા ડોસા
-ઇડલી-સાંભર
-મેડુ વડા
-દાળ વડા
-ટમાટો ઉત્તપમ
-ઓનિયન ઉત્તપમ
-મસાલા ઉત્તપમ
-મિક્સ ઉત્તપમ
-સ્વીટ કાશ્મીરી ઉત્તપમ*/
+const Dosa = 'ડોસા';
+const Fancy_Dosa = 'ફેન્સી ડોસા';
+const Vibrant_Gujarat = 'વાઈબ્રન્ટ ગુજરાત';
+const Masala_Dosa = 'મસાલા ડોસા';
+const Mesur_Masala_Dosa = 'મેસુર મસાલા ડોસા';
+const Mesur_Sada_Dosa = 'મેસુર સાદા ડોસા';
+const Cheese_Masala_Dosa = 'ચીઝ મસાલા ડોસા';
+const Sweet_Corn_Dosa = 'સ્વીટ કોર્ન ડોસા';
+const Mini_Roll_Dosa = 'મિની રોલ ડોસા';
+const Mini_Roll_Masala_Dosa = 'મિની રોલ મસાલા ડોસા';
+const Gotla_Dosa = 'ગોટલા ડોસા';
+const Mini_Tirvel_Masala_Dosa = 'મિની ટિર્વેલ મસાલા ડોસા';
+const Mini_Tirvel_Plain_Dosa = 'મિની ટિર્વેલ સાદા ડોસા';
+const Jumbo_Masala_Dosa = 'જમ્બો મસાલા ડોસા';
+const Jumbo_Plain_Dosa = 'જમ્બો સાદા ડોસા';
+const Pizza_Masala_Dosa = 'પિઝા મસાલા ડોસા';
+const Cheese_Roll_Masala_Dosa = 'ચીઝ રોલ મસાલા ડોસા';
+const Cheese_Roll_Plain_Dosa = 'ચીઝ રોલ સાદા ડોસા';
+const Cheese_Messuri_Masala_Dosa = 'ચીઝ મેસુરી મસાલા ડોસા';
+const Cheese_Messuri_Plain_Dosa = 'ચીઝ મેસુરી સાદા ડોસા';
+const Kesari_Masala_Dosa = 'કેસરી મસાલા ડોસા';
+const Idli_Sambar = 'ઇડલી-સાંભર';
+const Medu_Vada = 'મેડુ વડા';
+const Dal_Vada = 'દાળ વડા';
+const Tomato_Uttapam = 'ટમાટો ઉત્તપમ';
+const Onion_Uttapam = 'ઓનિયન ઉત્તપમ';
+const Masala_Uttapam = 'મસાલા ઉત્તપમ';
+const Mix_Uttapam = 'મિક્સ ઉત્તપમ';
+const Sweet_Kashmiri_Uttapam = 'સ્વીટ કાશ્મીરી ઉત્તપમ';
 
 // ફરસાણ
 const Mix_Bhajiya = 'મિક્સ ભજિયા';
@@ -864,54 +692,30 @@ const Pistachio_Pyramid = 'પીસ્તા પીરામીડ';
 const Dr_Munafa = 'ડ્રા.મુનાફા';
 
 // આઇસ્ક્રીમ ફલેવર
-/*Vanilla
-Brownie_Break_Cookies_Cream
-Red_Velvet
-Cashew_Roseberry
-Rose_Petal
-American_Nuts
-Panchamrut
-Bridge_Mohan
-Roasted_Almonds
-Jamfruit
-Rajbhog
-Mawa_Almonds
-Shahipan_Masala
-Strawberry_Cheese_Cake
-Cashew_Creamy_Balls
-Frosty_Black_Currant
-Baklava_Tumtum
-Drycut_King
-Ferrero_Rocher
-Exotica_King
-Royal_Coconut
-Black_Jambun
-Sugar_Free_Vanilla
-Sugar_Free_Rajbhog
-વેનીલા
-બ્રાઉની બ્રેક કુકીઝ & ક્રીમ
-રેડવેલવેટ
-કાજુ રોઝબેરી
-રોઝ પેટલ
-અમેરીકન નટસ
-પંચામૃત
-બ્રીજ મોહન
-રોસ્ટડ આમંડ
-જામફળ
-રાજભોગ
-માવા બદામ
-શાહીપાન મસાલા
-સ્ટ્રોબેરી ચીઝ કેક
-કાજુ ક્રીમી બોલ
-ફ્રોસ્ટીક બ્લેક કરંટ
-બકલાવા ટમટમ
-ડ્રાયકુટ કીંગ
-ફરેરો રોચર
-એકઝોટીકા કીંગ
-રોયલ કોકોનેટ
-બ્લેક જાંબુન
-સુગર ફ્રી વેનીલા
-સુગર ફ્રી રાજભોગ*/
+const Vanilla = 'વેનીલા';
+const Brownie_Break_Cookies_Cream = 'બ્રાઉની બ્રેક કુકીઝ & ક્રીમ';
+const Red_Velvet = 'રેડવેલવેટ';
+const Cashew_Roseberry = 'કાજુ રોઝબેરી';
+const Rose_Petal = 'રોઝ પેટલ';
+const American_Nuts = 'અમેરીકન નટસ';
+const Panchamrut = 'પંચામૃત';
+const Bridge_Mohan = 'બ્રીજ મોહન';
+const Roasted_Almonds = 'રોસ્ટડ આમંડ';
+//const Jamfruit = 'જામફળ';
+const Rajbhog = 'રાજભોગ';
+const Mawa_Almonds = 'માવા બદામ';
+const Shahipan_Masala = 'શાહીપાન મસાલા';
+const Strawberry_Cheese_Cake = 'સ્ટ્રોબેરી ચીઝ કેક';
+const Cashew_Creamy_Balls = 'કાજુ ક્રીમી બોલ';
+const Frosty_Black_Currant = 'ફ્રોસ્ટીક બ્લેક કરંટ';
+const Baklava_Tumtum = 'બકલાવા ટમટમ';
+const Drycut_King = 'ડ્રાયકુટ કીંગ';
+const Ferrero_Rocher = 'ફરેરો રોચર';
+const Exotica_King = 'એકઝોટીકા કીંગ';
+const Royal_Coconut = 'રોયલ કોકોનેટ';
+const Black_Jambun = 'બ્લેક જાંબુન';
+const Sugar_Free_Vanilla = 'સુગર ફ્રી વેનીલા';
+const Sugar_Free_Rajbhog = 'સુગર ફ્રી રાજભોગ';
 
 // લાઈવ બ્રાઉની.લાવા
 const Choco_Lava_Cake = 'ચોકો લાવા કેક';
@@ -930,10 +734,131 @@ const Cajou_Choco_Nutty = 'કાજુ ચોકો નટી';
 const Fortune = 'ફોર્ચયુન ૪×૪';
 
 // શુધ્ધ ઘીમાં ફલેવર
+/*Dry Fruit Gundi
+Gundi Laddu
+Dry Maharaja Halwa
+Dry Saffron Almond Halwa
+Lasa Laddu
+Son Papadi
+Magdi Laddu
+Dry Fig Dr. Halwa
+Ravana Laddu
+Churma Laddu
+Magajna Laddu
+Mohan Thal
+Almond Pak
+Korcha Pak
+Ghevar
+Channa Maysub
+Malai Roll
+Aadiya Gund Pak
+Cashew Nuts Aadiya
+Dry Fruit Ghari
+Saffron Almonds Aadiya
+Cashew Nuts Aadiya
+Saffron Pistachio Aadiya
+ડ્રાયફ્રુટ ગુંદી
+ગુંદી લાડુ
+સુકો મહારાજા હલવો
+સુકો કેશર બદામ હલવો
+લાસા લાડુ
+સોન પાપડી
+મગડી લાડુ
+સુકો અંજીર ડ્રા. હલવો
+રવાના લાડુ
+ચુરમાના લાડુ
+મગજના લાડુ
+મોહનથાળ
+બદામ પાક
+કોરચા પાક
+ઘેવર
+ચણા મૈસુબ
+મલાઇ રોલ
+અડદીયા ગુંદ પાક
+કાજુ અડદીયા
+ડ્રાયફ્રુટ ઘારી
+કેશર બદામ અડદીયા
+કાજુ મૈસુબ
+કેશર પીસ્તા અડદીયા*/
 
 // ગરમ ડ્રાયફ્રુટ હલવા
+/*
+Dr. Milk Halwa
+Dr. Carrot Halwa
+Butter Scotch Halwa
+Green Coconut Halwa
+Pineapple Chilli Halwa
+Cashew Gulkand Halwa
+Pancharatna Halwa
+Black Jamun Halwa
+Fig Kasturi Halwa
+Mix Slice Halwa
+Australian Halwa
+Dr. Kiwi Shahi Halwa
+Dr. Anjeer Halwa
+Roasted Fig Almond Halwa
+Dr. Thabdi Halwa
+Brownie Halwa
+Kachha Aam Halwa
+Rose Petal Lachko
+Paan King Lachko
+Strawberry Lychee Halwa
+S.S. Maharaja Halwa
+American Halwa
+Dr. Akhrot Halwa
+Kesar Kachuri Halwa
+Dr. Calcutta Tawa Sweet
+Kyuri Pancharatna
+Dr. Aadiya Lachko
+Magno Shiro
+ડ્રા. દુધીનો હલવો
+ડ્રા. ગાજરનો હલવો
+બટર સ્કોચ હલવો
+લીલા નાળીયેર હલવો
+પાઇનેપલ ચીલી હલવો
+કાજુ ગુલકંદ હલવો
+પંચરત્ન હલવો
+કાલા જાંબુ હલવો
+અંજીર કસ્તુરી હલવો
+મીકસ સ્લાઇઝ હલવો
+ઓસ્ટ્રેલીયન હલવો
+ડ્રા. કીવી શાહી હલવો
+ડ્રા. અંજીર હલવો
+રોસ્ટેડ અંજીર બદામ હલવો
+ડ્રા. થાબડી હલવો
+બ્રાઉની હલવો
+કચ્ચા આમ હલવો
+રોઝ પેટલ લચકો
+પાન કિંગ લચકો
+સ્ટ્રોબેરી લીચી હલવો
+S.S. મહારાજા હલવો
+અમેરીકન હલવો
+ડ્રા. અખરોટ હલવો
+કેસર કચુરી હલવો
+ડ્રા. કલકતી તવા સ્વીટ
+કયુરી પંચરત્ન
+ડ્રા. અડદીયા લચકો
+મગનો શીરો
+*/
 
 // શીખંડ માં ફલેવર
+const White_Shikhand = 'સફેદ શીખંડ';
+const Slice_Mahabal = 'ડા. સ્લાઇઝ મહાબળ';
+const Butter_Snap_Shikhand = 'બટર સ્નેપ શીખડ';
+const Fruit_Shikhand = 'ફ્રુટ શીખંડ';
+const Pineapple_Chili_Shikhand = 'પાઇનેપલ ચીલી શીખડ';
+const Stobi_Lychee_Shikhand = 'સ્ટોબી લીચી શીખડ';
+const Vila_Shikhand = 'ડા. વીલા શીખંડ';
+const Keshar_Shikhand = 'કેશર શીખંડ';
+const Chocolate_Chips_Shikhand = 'ચોકો ચીપ્સ શીખડ';
+const Mango_Shikhand = 'મેંગો શીખંડ';
+const RedVelvet_Shikhand = 'રેડવલ્વેટ શીખંડ';
+const Cream_Coconut_Sikhand = 'ક્રિમ કોકોનટ શીખંડ';
+const Keshar_Dr_Sikhand = 'કેશર ડા. શીખડ';
+const Rdo_Rajbhog_Sikhand = 'ર્ડો. રાજભોગ શીખડ';
+const Keshar_Malai_Aji_Kastari = 'કેશર મલાઇ અજી કસ્તરી';
+const American_Diamond_Fruit = 'અમરકન ડાયમંડ ફ્રુટ';
+const TajMahal_Treasures = 'તાજમહલ ખજાના';
 
 // સ્પે. સંદેશ માં ફલ
 const Cake_Message = 'કેક સંદેશ';
@@ -957,8 +882,134 @@ const Cookies_Cream_Matho = 'કુકીઝ & ક્રીમ મઠ્ઠો';
 const Dryfruit_Matho = 'ડ્રાયફ્રુટ મઠ્ઠો';
 
 // કાજુ બદામ પીસ્તામાં ફલેવર
+/*
+White Cashew Nuts
+Dr.Orange Patra
+Choco Cashew Nuts
+Kunchi Basket
+Dryfruit Balls
+Cashew Choco Rolls
+Sesar Cashew Nuts
+Cashew Kalash
+Cashew Donuts
+Dr.Choco Balls
+Cashew Crispy
+Cashew Whole
+Pistachio Rolls
+Cashew Fig Basket
+Dryfruit Ink
+Cashew Rose Balls
+Cashew Basket
+Pistachio Honey Ball
+Kunchi Roll
+Cashew Fig Honey
+Cashew King Roll
+Rose Choco Pizza
+Rochak Laddu
+Alfred Stuff
+Cashew Aristocrat
+Diamond Choco Basket
+Cashew Choco Pizza
+Pistachio Diamond Touch
+Lotus Punch
+Dr. Chandramali
+KGF - 3
+Pistachio Cashew Puri
+Gold Roll
+Choco Honey Ball
+Cashew Choco Ball
+Fig Treasures
+Dr. Choco Exotica
+Fig Choco Roll
+Kiwi Exotica
+Dr. Pista Ladoo
+Cashew Gulshan
+Dr. Orange Treasures
+Cashew Almond
+Dr. Fig Puri
+Exotica
+Alfred Roll
+Roop Mastani
+Cashew Bait
+Cashew Katori
+Pisori Kali Katri
+વ્હાઈટ કાજુ કત્રી
+ડ્રા.ઓરેંજ પાત્રા
+ચોકો કાજુ કત્રી
+કૂંચી બાસ્કેટ
+ડ્રાયફ્રુટ બોલ
+કાજુ ચોકો રોલ
+કેશર કાજુ કત્રી
+કાજુ કળશ
+કાજુ ડોનટ
+ડ્રા.ચોકો બોલ
+કાજુ ક્રિસ્પી
+કાજુ કુલ
+પીસ્તા રોલ
+કાજુ અંજીર બાસ્કેટ
+ડ્રાયફ્રુટ શાહી
+કાજુ રોઝ બોલ
+કાજુ બાસ્કેટ
+પીસ્તા હની બોલ
+કૂંચી રોલ
+કાજુ અંજીર હની
+કાજુ કીંગ રોલ
+રોઝ ચોકો પીઝા
+રોચક લાડુ
+આલ્ફ્રેડ સ્ટફ
+કાજુ એરીસ્ટ્રોકેટ
+ડાયમંડ ચોકો બાસ્કેટ
+કાજુ ચોકો પીઝા
+પીસ્તા ડામંડ ટચ
+લોટસ પંચ
+ડ્રા.ચંદ્રમાલી
+KGF - 3
+પીસ્તા કાજુ પુરી
+સોન રોલ
+ચોકો હની બોલ
+કાજુ ચોકો બોલ
+અંજીર ખજાના
+ડ્રા.ચોકો એકઝોટીકા
+અંજીર ચોકો રોલ
+કીવી એકઝોટીકા
+ડ્રા.પીસ્તા લાડુ
+કાજુ ગુલશન
+ડ્રા.ઓરેંજ ખજાના
+કાજુ આલમંડ
+ડ્રા.અંજીર પુરી
+એકઝોટીકા
+આલ્ફ્રેડ રોલ
+રૂપ મસ્તાની
+કાજુ બાઈટ
+કાજુ કટોરી
+પીસોરી કલી કત્રી
+*/
 
 // મટકા માં ફલેવર
+const Rose_Currant_Matka = 'રોઝ કરંટ મટકા';
+const Rajwadi_Matka = 'રજવાડી મટકા';
+const Mawa_Malai_Matka = 'માવા મલાઇ મટકા';
+const Kunchi_Matka = 'કૂંચી મટકા';
+const Rasmalai_Matka = 'રસમલાઈ મટકા';
+const Red_Velvet_Handi = 'રેડવેલવેટ હાંડી';
+const Rose_Rajwadi_Handi = 'રોઝ રજવાડી હાંડી';
+const Butter_Bonanza_Matka = 'બટર બોનાન્ઝા મટકા';
+const Strawberry_Matka = 'સ્ટ્રોબેરી મટકા';
+const Cream_Coconut_Matka = 'ક્રીમ કોકોનટ મટકા';
+const Roseberry_Handi = 'રોઝબેરી હાંડી';
+const Mango_Matka = 'મેંગોં મટકા';
+const Panchamrut_Handi = 'પંચામૃત હાંડી';
+const Malai_Mishri_Handi = 'મલાઈ મિશ્રી હાંડી';
+const Rajbhog_Matka = 'રાજભોગ મટકા';
+const Mango_Handi = 'મેંગોં હાંડી';
+const Maharaja_Pista_Matka = 'મહારાજા પીસ્તા મટકા';
+const Kiwi_Bonanza = 'કિવી બોનાન્ઝા';
+const Cranberry_Matka = 'કેનબેરી મટકા';
+const Pine_Matka = 'S.S. પાઈના મટકા';
+const Kiwi_Pine_Matka = 'કિવી પાઈના મટકા';
+const Decorative_Matka = 'સજાવટ મટકા';
+const Orange_Malta = 'ઓરેંજ માલટા';
+const Apple_Bonanza = 'એપલ બોનાન્ઝા';
 
 // કપ માં ફલેવર
 const Rose_Gold_Cup = 'રોઝ ગોલ્ડ કપ';
@@ -988,6 +1039,34 @@ const Badam_Butter ='મખ્ખન બદામ';
 const Cashew_Triveni_Sangam = 'કાજુ ત્રીવેણી સંગમ';
 
 // સ્પે. બંગાળી ફલેવર
+const Rasgulla = 'રસગુલ્લા';
+const Lychee_Bati = 'લીચી બાટી';
+const Choco_Bati = 'ચોકો બાટી';
+const Chamcham = 'ચમચમ';
+const Rasmalai = 'રસમલાઇ';
+const Butter_Bati = 'બટરબાટી';
+const Rajashahi = 'રાજાશાહી';
+const Alfred_Slices = 'આલ્ફ્રેડ સ્લાઈઝ';
+const Madhumilan = 'મધુમીલન';
+const Kiwi_Sandwich = 'કિવી સેન્ડવીચ';
+const Ratharani = 'રાતરાણી';
+const Cream_Pie_Bati = 'ક્રીમ પાઇના બાટી';
+const Kathokar_Bati = 'કેથોકર બાટી';
+const Rose_Gulkand_Bati = 'રોઝ ગુલકંદ બાટી';
+const Orange_Pomegranate_Bati = 'ઓરેંજ અનાર બાટી';
+const SS_Special = 'SS સ્પેશીલ';
+const Malai_Cream_Roll = 'મલાઈ ક્રીમ રોલ';
+const Pushparaj = 'પુષ્પરાજ';
+const Chenna_Toast = 'છેના ટોસ્ટ';
+const Keshar_Chandrawal = 'કેશર ચંદ્રાવલ';
+const Fim_Chamcham = 'ફ઼િમ ચમચમ';
+const Mawa_Chamcham = 'માવા ચમચમ';
+const Keshar_Kumkum = 'કેશર કુમકુમ';
+//const Rajbhog = 'રાજભોગ';
+const Keshar_Cream_Roll = 'કેશર ક્રીમ રોલ';
+const Velvet_Roll = 'વેલવેટ રોલ';
+const Lychee_Glory = 'લીચી ગ્લોરી';
+const Raffello_Ball = 'રફેલો બોલ';
 
 // પેઠા માં ફલેવર
 const Rajmoti_Petha = 'રાજમોતી પેઠા';

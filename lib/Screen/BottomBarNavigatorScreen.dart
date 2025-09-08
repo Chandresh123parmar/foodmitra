@@ -15,20 +15,23 @@ class _BottombarnavigatorscreenState extends State<Bottombarnavigatorscreen> {
 
   int _currentIndex = 0;
 
-  final List<Widget> items = [
+  static const List<Widget> items = [
     HomeScreen(),
     CartScreen(),
   ];
+  void ontapmethod(int index) {
+    setState(() {
+      _currentIndex = index;
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
-        currentIndex: 0,
-          onTap: (index){
-          setState(() {
-            _currentIndex = index;
-          });
-          },
+        selectedItemColor: Colors.black,
+        selectedFontSize: 20,
+        onTap:ontapmethod,
+        currentIndex: _currentIndex,
           items: [
         BottomNavigationBarItem(icon: Icon(CupertinoIcons.home),label: 'Home'),
         BottomNavigationBarItem(icon: Icon(Icons.storefront_outlined),label: 'Cart')
@@ -40,7 +43,7 @@ class _BottombarnavigatorscreenState extends State<Bottombarnavigatorscreen> {
           ],
         ),
       ),
-      body: items[_currentIndex]
+      body: items.elementAt(_currentIndex),
     );
   }
 }
