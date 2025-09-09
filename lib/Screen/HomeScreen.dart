@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:foodmitra/Screen/Subcategory.dart';
 import '../utils/FoodText.dart';
+import '../widget/TextWidgets.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -131,7 +132,11 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.white,
         appBar: AppBar(
           backgroundColor: Colors.white,
-          title: const Text(Category),
+          title: text(
+              Category,
+              fontSize: 23,
+              fontWeight: FontWeight.bold
+          ),
           centerTitle: true,
         ),
         body: Column(
@@ -180,8 +185,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       onPressed: () {
                         debugPrint("Selected: ${categories[index]}");
                         final String selectedCategory = categories[index];
-                        final List<String>? subItems =
-                            categoryMap[selectedCategory];
+                        final List<String>? subItems = categoryMap[selectedCategory];
 
                         if (subItems != null) {
                           Navigator.push(

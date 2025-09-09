@@ -28,6 +28,7 @@ class _BottombarnavigatorscreenState extends State<Bottombarnavigatorscreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       bottomNavigationBar: SizedBox(
         height: 80,
         child: BottomNavigationBar(
@@ -47,13 +48,7 @@ class _BottombarnavigatorscreenState extends State<Bottombarnavigatorscreen> {
           BottomNavigationBarItem(icon: Icon(Icons.storefront_outlined),label: 'Cart')
         ]),
       ),
-      drawer: Drawer(
-        child: ListView(
-          children: [
-
-          ],
-        ),
-      ),
+      
       body: items.elementAt(_currentIndex),
     );
   }
