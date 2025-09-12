@@ -1,6 +1,6 @@
 const CategorySearch = 'કેટેગરી માટે ખોજો';
 const Category = 'કેટેગરીજ';
-const name = 'મહાકાળી કેટરર્સ';
+const title = 'મહાકાળી કેટરર્સ';
 const phone_NO = '97274 73918 , 98253 52718';
 
 const Biting = 'બાઇટિંગ';
@@ -904,6 +904,3 @@ const Petha_Ma_Flavor = 'પેઠા માં ફલેવર';
     'પાઇનેપલ ફીંગર',
   ];
 
-class CartData {
-  static List<String> cartItems = [];
-}

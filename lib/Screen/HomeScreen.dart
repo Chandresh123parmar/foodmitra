@@ -11,7 +11,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  final TextEditingController SearchBar = TextEditingController();
+  //final TextEditingController SearchBar = TextEditingController();
 
   // List of all food category texts
   final List<String> categories = [
@@ -130,39 +130,30 @@ class _HomeScreenState extends State<HomeScreen> {
       onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         backgroundColor: Colors.white,
-        appBar: AppBar(
-          backgroundColor: Colors.white,
-          title: text(
-              Category,
-              fontSize: 23,
-              fontWeight: FontWeight.bold
-          ),
-          centerTitle: true,
-        ),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-              child: TextField(
-                controller: SearchBar,
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(15),
-                    borderSide: BorderSide(color: Colors.grey.shade300),
-                  ),
-                  hintText: CategorySearch,
-                  hintStyle: TextStyle(color: Colors.grey.shade600),
-                  prefixIcon: Icon(
-                    Icons.search,
-                    size: 30,
-                    color: Colors.grey.shade600,
-                  ),
-                  filled: true,
-                  fillColor: Colors.grey.shade200,
-                ),
-              ),
-            ),
+            // Padding(
+            //   padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            //   child: TextField(
+            //     controller: SearchBar,
+            //     decoration: InputDecoration(
+            //       border: OutlineInputBorder(
+            //         borderRadius: BorderRadius.circular(15),
+            //         borderSide: BorderSide(color: Colors.grey.shade300),
+            //       ),
+            //       hintText: CategorySearch,
+            //       hintStyle: TextStyle(color: Colors.grey.shade600),
+            //       prefixIcon: Icon(
+            //         Icons.search,
+            //         size: 30,
+            //         color: Colors.grey.shade600,
+            //       ),
+            //       filled: true,
+            //       fillColor: Colors.grey.shade200,
+            //     ),
+            //   ),
+            // ),
 
             Expanded(
               child: Padding(
