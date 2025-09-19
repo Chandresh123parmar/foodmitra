@@ -200,7 +200,7 @@ class _BottombarnavigatorscreenState extends State<Bottombarnavigatorscreen> {
                 label: Text(
                   categories[index],
                   style: const TextStyle(
-                    fontSize: 20,
+                    fontSize: 17,
                     color: Colors.black,
                   ),
                   textAlign: TextAlign.center,

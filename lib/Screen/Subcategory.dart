@@ -114,10 +114,8 @@ class _SubCategoryScreenState extends State<SubCategoryScreen> {
                 ),
                 style: ElevatedButton.styleFrom(
                   elevation: 0,
-                  backgroundColor:
-                  isAdded ? Colors.red.shade50 : Colors.blue.shade50,
-                  padding:
-                  const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                  backgroundColor: isAdded ? Colors.red.shade50 : Colors.blue.shade50,
+                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),
