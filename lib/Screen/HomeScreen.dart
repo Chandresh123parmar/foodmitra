@@ -117,9 +117,20 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     final filtered = _searchQuery.isEmpty
         ? categories
-        : categories
-        .where((c) => c.toLowerCase().contains(_searchQuery.toLowerCase()))
-        .toList();
+        : categories.where((category) {
+      final query = _searchQuery.toLowerCase();
+
+      // category match
+      final categoryMatch = category.toLowerCase().contains(query);
+
+      // subItems match
+      final subItems = categoryMap[category] ?? [];
+      final itemMatch = subItems.any(
+            (item) => item.toLowerCase().contains(query),
+      );
+
+      return categoryMatch || itemMatch;
+    }).toList();
 
     return GestureDetector(
       onTap: () => FocusScope.of(context).unfocus(),
@@ -198,19 +209,23 @@ class _HomeScreenState extends State<HomeScreen> {
 
                   return GestureDetector(
                     onTap: () {
-                      final selectedCategory = filtered[index];
-                      final subItems = categoryMap[selectedCategory];
-                      if (subItems != null) {
+                        final selectedCategory = filtered[index];
+                        final allItems = categoryMap[selectedCategory] ?? [];
+
+                        final filteredItems = _searchQuery.isEmpty
+                            ? allItems
+                            : allItems.where((item) =>
+                            item.toLowerCase().contains(_searchQuery.toLowerCase())).toList();
+
                         Navigator.push(
                           context,
                           MaterialPageRoute(
                             builder: (_) => SubCategoryScreen(
                               categoryName: selectedCategory,
-                              subItems: subItems,
+                              subItems: filteredItems,
                             ),
                           ),
                         );
-                      }
                     },
                     child: Container(
                       decoration: BoxDecoration(

@@ -33,7 +33,7 @@ class _DownloadScreenState extends State<DownloadScreen> {
       context: context,
       builder: (_) => AlertDialog(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        title: const Text('બધી Files Delete કરો?'),
+        title: const Text('All Files Delete'),
         content: const Text('બધી downloaded PDFs delete થઈ જશે.'),
         actions: [
           TextButton(
@@ -148,7 +148,7 @@ class _DownloadScreenState extends State<DownloadScreen> {
           ),
           const SizedBox(height: 16),
           const Text(
-            'કોઈ PDF નથી',
+            'PDF Empty',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700, color: Color(0xFF2D1600)),
           ),
           const SizedBox(height: 6),

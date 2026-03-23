@@ -36,6 +36,13 @@ class _CartScreenState extends State<CartScreen> {
     return map;
   }
 
+  String? selectedShift;
+  final List<String> _shift = [
+    'Morning',
+    'Afternoon',
+    'Night'
+  ];
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -69,7 +76,7 @@ class _CartScreenState extends State<CartScreen> {
           ),
           const SizedBox(height: 20),
           const Text(
-            'ઓર્ડર ખાલી છે',
+            'Order is empty',
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.w700,
@@ -78,7 +85,7 @@ class _CartScreenState extends State<CartScreen> {
           ),
           const SizedBox(height: 8),
           Text(
-            'Home screen પર જઈ items ઉમેરો',
+            'Category add કરો.',
             style: TextStyle(fontSize: 13, color: Colors.grey.shade500),
           ),
           const SizedBox(height: 24),
@@ -357,27 +364,41 @@ class _CartScreenState extends State<CartScreen> {
             ),
           ),
 
-          // Items
-          ...items.map((item) => Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
-            child: Row(
-              children: [
-                Container(
-                  width: 6,
-                  height: 6,
-                  decoration: const BoxDecoration(
-                    color: Color(0xFF4CAF50),
-                    shape: BoxShape.circle,
-                  ),
-                ),
-                const SizedBox(width: 10),
-                Text(
-                  item.subItem,
-                  style: const TextStyle(fontSize: 13, color: Color(0xFF2D1600)),
-                ),
-              ],
+          GridView.builder(
+            shrinkWrap: true,
+            padding: EdgeInsets.symmetric(horizontal: 10,vertical: 5),
+            physics: const NeverScrollableScrollPhysics(),
+            itemCount: items.length,
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 3,
+              mainAxisSpacing: 6,
+              crossAxisSpacing: 6,
+              childAspectRatio: 3.5,
             ),
-          )),
+            itemBuilder: (context, index) {
+              final item = items[index];
+              return Row(
+                children: [
+                  Container(
+                    width: 6,
+                    height: 6,
+                    decoration: const BoxDecoration(
+                      color: Color(0xFF4CAF50),
+                      shape: BoxShape.circle,
+                    ),
+                  ),
+                  const SizedBox(width: 6),
+                  Expanded(
+                    child: Text(
+                      item.subItem,
+                      style: const TextStyle(fontSize: 12, color: Color(0xFF2D1600)),
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ),
+                ],
+              );
+            },
+          ),
 
           const SizedBox(height: 4),
         ],
@@ -462,13 +483,49 @@ class _CartScreenState extends State<CartScreen> {
                           _buildField(_nameCtrl, 'Name', Icons.person_outline),
                           _buildField(_phoneCtrl, 'Phone Number', Icons.phone_outlined,
                               keyboardType: TextInputType.phone),
-                          _buildField(_dateCtrl, 'Date', Icons.calendar_today_outlined),
+                          _buildField(_dateCtrl, 'Date', Icons.calendar_today_outlined,isDate: true),
                           _buildField(_peopleCtrl, 'Number of People', Icons.groups_outlined,
                               keyboardType: TextInputType.number),
-                          _buildField(_shiftCtrl, 'Shift', Icons.access_time_outlined),
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 14),
+                            child: DropdownButtonFormField<String>(
+                              value: selectedShift,
+                              items: _shift.map((shift) {
+                                return DropdownMenuItem(
+                                  value: shift,
+                                  child: Text(shift),
+                                );
+                              }).toList(),
+                              onChanged: (value) {
+                                setModalState(() {
+                                  selectedShift = value;
+                                  _shiftCtrl.text = value ?? '';
+                                });
+                              },
+                              decoration: InputDecoration(
+                                labelText: 'Shift',
+                                prefixIcon: const Icon(Icons.access_time_outlined, color: Color(0xFFFF8C42)),
+                                filled: true,
+                                fillColor: Colors.white,
+                                border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(12),
+                                  borderSide: const BorderSide(color: Color(0xFFFFE0B2)),
+                                ),
+                                enabledBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(12),
+                                  borderSide: const BorderSide(color: Color(0xFFFFE0B2)),
+                                ),
+                                focusedBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(12),
+                                  borderSide: const BorderSide(color: Color(0xFFFF8C42), width: 1.8),
+                                ),
+                              ),
+                            ),
+                          ),
                           _buildField(_priceCtrl, 'Price (₹)', Icons.currency_rupee,
                               keyboardType: TextInputType.number),
                           _buildField(_addressCtrl, 'Address', Icons.location_on_outlined,
+                              keyboardType: TextInputType.streetAddress,
                               maxLines: 2),
                         ],
                       ),
@@ -525,11 +582,32 @@ class _CartScreenState extends State<CartScreen> {
       IconData icon, {
         TextInputType? keyboardType,
         int maxLines = 1,
+        bool isDate = false, // 👈 NEW
       }) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 14),
       child: TextField(
         controller: ctrl,
+        readOnly: isDate, // 👈 typing disable
+        onTap: isDate
+            ? () async {
+          DateTime? pickedDate = await showDatePicker(
+            context: context,
+            initialDate: DateTime.now(),
+            firstDate: DateTime(2000),
+            lastDate: DateTime(2100),
+          );
+
+          if (pickedDate != null) {
+            String formattedDate =
+            DateFormat('dd-MM-yyyy').format(pickedDate);
+
+            setState(() {
+              ctrl.text = formattedDate;
+            });
+          }
+        }
+            : null,
         keyboardType: keyboardType,
         maxLines: maxLines,
         style: const TextStyle(fontSize: 14, color: Color(0xFF2D1600)),
@@ -551,7 +629,8 @@ class _CartScreenState extends State<CartScreen> {
             borderRadius: BorderRadius.circular(12),
             borderSide: const BorderSide(color: Color(0xFFFF8C42), width: 1.8),
           ),
-          contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 14),
+          contentPadding:
+          const EdgeInsets.symmetric(horizontal: 12, vertical: 14),
         ),
       ),
     );
@@ -587,6 +666,17 @@ class _CartScreenState extends State<CartScreen> {
                 shift: _shiftCtrl.text,
                 groupedItems: _groupedItems,
               );
+
+              _nameCtrl.clear();
+              _phoneCtrl.clear();
+              _peopleCtrl.clear();
+              _dateCtrl.clear();
+              _addressCtrl.clear();
+              _priceCtrl.clear();
+              _shiftCtrl.clear();
+
+              setState(() {}); // refresh UI
+
               if (context.mounted) {
                 Navigator.pop(context);
                 ScaffoldMessenger.of(context).showSnackBar(
@@ -619,10 +709,11 @@ class _CartScreenState extends State<CartScreen> {
     final fontData = await rootBundle.load('assets/text/NotoSansGujarati-Regular.ttf');
     final gujaratiFont = pw.Font.ttf(fontData);
     final gujaratiStyle = pw.TextStyle(font: gujaratiFont, fontSize: 12);
-    final gujaratiBold = pw.TextStyle(font: gujaratiFont, fontSize: 13, fontWeight: pw.FontWeight.bold);
+    final gujaratiBold = pw.TextStyle(font: gujaratiFont, fontSize: 14, fontWeight: pw.FontWeight.bold);
 
     pdf.addPage(
       pw.MultiPage(
+        maxPages: 100,
         build: (context) => [
           pw.Container(
             padding: const pw.EdgeInsets.all(12),
@@ -668,10 +759,19 @@ class _CartScreenState extends State<CartScreen> {
                       margin: const pw.EdgeInsets.symmetric(vertical: 4),
                       child: pw.Text(entry.key, style: gujaratiBold),
                     ),
-                    ...entry.value.map((item) => pw.Padding(
-                      padding: const pw.EdgeInsets.only(left: 10, bottom: 2),
-                      child: pw.Text('• ${item.subItem}', style: gujaratiStyle),
-                    )),
+                    pw.Wrap(
+                      spacing: 10, // column gap
+                      runSpacing: 5, // row gap
+                      children: entry.value.map((item) {
+                        return pw.Container(
+                          width: 120, // 👈 control column count (adjust this)
+                          child: pw.Text(
+                            '• ${item.subItem}',
+                            style: gujaratiStyle,
+                          ),
+                        );
+                      }).toList(),
+                    ),
                     pw.Divider(),
                   ],
                 )),

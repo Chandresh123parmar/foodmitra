@@ -39,6 +39,7 @@ dependencies:
   intl: ^0.20.2
   open_filex: ^4.3.4
 
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -46,6 +47,9 @@ dev_dependencies:
   pdf: ^3.11.0
   pdfx: ^2.6.0
   path_provider: ^2.1.5
+
+
+
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
