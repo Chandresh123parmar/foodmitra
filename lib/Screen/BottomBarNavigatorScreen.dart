@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:foodmitra/utils/FoodColors.dart';
 import 'package:foodmitra/utils/FoodText.dart';
-
 import 'CartScreen.dart';
 import 'HomeScreen.dart';
 import 'Subcategory.dart';

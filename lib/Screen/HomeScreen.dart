@@ -1,3 +1,5 @@
+// HomeScreen.dart - UPDATED with English+Gujarati Search
+
 import 'package:flutter/material.dart';
 import 'package:foodmitra/Screen/Subcategory.dart';
 import '../utils/FoodText.dart';
@@ -27,6 +29,61 @@ class _HomeScreenState extends State<HomeScreen> {
     Cup_Flavor, Sugar_Free_Sweets, Butter_Flavor, Special_Bengali_Flavor,
     Petha_Ma_Flavor,
   ];
+
+  // ✅ English aliases for Gujarati categories (for English search support)
+  final Map<String, List<String>> categoryEnglishAliases = {
+    'બાઇટિંગ': ['biting', 'snack', 'bite'],
+    'સૂપ': ['soup', 'shorba'],
+    'સ્ટાર્ટર': ['starter', 'appetizer', 'start'],
+    'મીઠાઈ': ['sweets', 'mithai', 'sweet', 'dessert', 'meethai'],
+    'કઠોળ': ['pulses', 'dal', 'beans', 'lentils'],
+    'કાઠિયાવાડી': ['kathiawadi', 'kathiyawadi', 'gujarati'],
+    'વેજીટેબલ વેરિયેટી': ['vegetable', 'sabji', 'sabzi', 'veggies', 'variety'],
+    'પંજાબી વેરિયેટી': ['punjabi', 'north indian'],
+    'ટંડૂરી': ['tandoori', 'tandoor', 'grilled'],
+    'રોટલી': ['roti', 'bread', 'chapati', 'paratha', 'rotli'],
+    'ચાઇનીઝ': ['chinese', 'noodles', 'china'],
+    'સાઉથ ઇન્ડિયન': ['south indian', 'idli', 'dosa', 'sambhar'],
+    'ફરસાણ': ['farsan', 'namkeen', 'snacks', 'farsaan'],
+    'પિઝ્ઝા': ['pizza', 'piza'],
+    'ચાટ': ['chaat', 'chat', 'bhel', 'pav bhaji', 'puchka'],
+    'રાયતા': ['raita', 'rayta', 'curd', 'yogurt'],
+    'દાળ': ['dal', 'daal', 'lentil'],
+    'ભાત': ['rice', 'bhat', 'biryani', 'pulao'],
+    'સલાડ': ['salad', 'salads'],
+    'ચટણી': ['chutney', 'chatni', 'sauce', 'dip'],
+    'પાપડ': ['papad', 'papadum', 'pappad'],
+    'લસ્સી': ['lassi', 'lasi', 'buttermilk', 'chhach'],
+    'જ્યૂસ': ['juice', 'jus', 'fresh juice'],
+    'ઠંડા પીણા': ['cold drinks', 'cold drink', 'soda', 'beverage', 'drinks', 'thanda'],
+    'પાણી': ['water', 'paani'],
+    'થાળી/પ્લેટ': ['thali', 'plate', 'thali plate', 'meal', 'thaali'],
+    'કપલ': ['couple', 'couples'],
+    'સ્પેશ્યલ લિક્વિડ ફ્લેવર': ['special liquid', 'liquid flavor', 'flavour'],
+    'સ્પેશ્યલ લિક્વિડ પ્લાઝા ફ્લેવર': ['plaza flavor', 'liquid plaza'],
+    'ડ્રાય ફ્રૂટ ફ્લેવર ઈન પીસ': ['dry fruit', 'dryfruit', 'kaju', 'badam', 'pista', 'pieces'],
+    'બર્ફી ફ્લેવર': ['barfi', 'barfi flavor', 'burfi'],
+    'લાઇવ સ્વિટ્સ': ['live sweets', 'fresh sweets'],
+    'જામુન ફ્લેવર': ['jamun', 'gulab jamun', 'jamoon'],
+    'પેડા ફ્લેવર': ['peda', 'pedha', 'penda'],
+    'બક્લાવા ફ્લેવર': ['baklava', 'baklawa'],
+    'આઈસ ક્રીમ ફ્લેવર': ['ice cream', 'icecream', 'gelato'],
+    'લાઇવ બ્રાઉની લાવા': ['brownie', 'lava', 'brownie lava'],
+    'આઈ.ક્રીમ.ગોળ': ['ice cream gola', 'gola', 'kulfi'],
+    'સ્પેશ્યલ કૅન્ડી ફ્લેવર': ['candy', 'special candy', 'toffee'],
+    'પ્યોર ઘી ફ્લેવર': ['pure ghee', 'ghee', 'desi ghee'],
+    'હોટ ડ્રાઇ ફ્રૂટ હલ્વો': ['halwa', 'halva', 'hot halwa', 'dry fruit halwa'],
+    'શ્રીખંડ મ.ફ.': ['shrikhand', 'srikhand', 'shreekhnad', 'sikhand'],
+    'સ્પેશ્યલ સંદેશ મ.ફ.': ['sandesh', 'sandesh fruit', 'bengali sweet'],
+    'માઠ મ.ફ.': ['matha', 'math', 'matha flavor'],
+    'કાજૂ.બ.પ.ફ.': ['cashew', 'almond', 'pistachio', 'kaju', 'badam'],
+    'માટકા મ.ફ.': ['matka', 'earthen pot', 'matka flavor'],
+    'કપ ફ્લેવર': ['cup', 'cup flavor'],
+    'સુગર ફ્રી સ્વિટ્સ': ['sugar free', 'sugarfree', 'diabetic', 'no sugar'],
+    'બટર ફ્લેવર': ['butter', 'butter flavor'],
+    'સ્પેશ્યલ બંગાળી ફ્લેવર': ['bengali', 'bengali flavor', 'bengali sweet'],
+    'પેઠા મ.ફ.': ['petha', 'petta', 'petha flavor'],
+  };
 
   final Map<String, List<String>> categoryMap = {
     Biting: Bitingitem, Soup: Soupitem, Starter: Starteritem,
@@ -59,7 +116,6 @@ class _HomeScreenState extends State<HomeScreen> {
     Petha_Ma_Flavor: Petha_Ma_Flavoritem,
   };
 
-  // Icon map for categories
   final Map<String, IconData> categoryIcons = {
     'બાઇટિંગ': Icons.lunch_dining,
     'સૂપ': Icons.soup_kitchen,
@@ -90,47 +146,43 @@ class _HomeScreenState extends State<HomeScreen> {
     'કપલ': Icons.favorite,
   };
 
-  // Color palette for cards
   final List<Color> _cardColors = [
-    const Color(0xFFFFF3E0),
-    const Color(0xFFE8F5E9),
-    const Color(0xFFE3F2FD),
-    const Color(0xFFFCE4EC),
-    const Color(0xFFF3E5F5),
-    const Color(0xFFE0F7FA),
-    const Color(0xFFFFF8E1),
-    const Color(0xFFE8EAF6),
+    const Color(0xFFFFF3E0), const Color(0xFFE8F5E9),
+    const Color(0xFFE3F2FD), const Color(0xFFFCE4EC),
+    const Color(0xFFF3E5F5), const Color(0xFFE0F7FA),
+    const Color(0xFFFFF8E1), const Color(0xFFE8EAF6),
   ];
 
   final List<Color> _iconColors = [
-    const Color(0xFFFF8C42),
-    const Color(0xFF4CAF50),
-    const Color(0xFF2196F3),
-    const Color(0xFFE91E63),
-    const Color(0xFF9C27B0),
-    const Color(0xFF00BCD4),
-    const Color(0xFFFFC107),
-    const Color(0xFF3F51B5),
+    const Color(0xFFFF8C42), const Color(0xFF4CAF50),
+    const Color(0xFF2196F3), const Color(0xFFE91E63),
+    const Color(0xFF9C27B0), const Color(0xFF00BCD4),
+    const Color(0xFFFFC107), const Color(0xFF3F51B5),
   ];
+
+  // ✅ Main search function - Gujarati + English both supported
+  bool _matchesSearch(String category) {
+    if (_searchQuery.isEmpty) return true;
+    final query = _searchQuery.toLowerCase().trim();
+
+    // 1. Gujarati category name match
+    if (category.toLowerCase().contains(query)) return true;
+
+    // 2. English alias match for category
+    final aliases = categoryEnglishAliases[category] ?? [];
+    if (aliases.any((alias) => alias.contains(query) || query.contains(alias))) return true;
+
+    // 3. Subcategory item match (Gujarati)
+    final subItems = categoryMap[category] ?? [];
+    if (subItems.any((item) => item.toLowerCase().contains(query))) return true;
+
+    return false;
+  }
 
   @override
   Widget build(BuildContext context) {
-    final filtered = _searchQuery.isEmpty
-        ? categories
-        : categories.where((category) {
-      final query = _searchQuery.toLowerCase();
-
-      // category match
-      final categoryMatch = category.toLowerCase().contains(query);
-
-      // subItems match
-      final subItems = categoryMap[category] ?? [];
-      final itemMatch = subItems.any(
-            (item) => item.toLowerCase().contains(query),
-      );
-
-      return categoryMatch || itemMatch;
-    }).toList();
+    // ✅ Filter using new search function
+    final filtered = categories.where(_matchesSearch).toList();
 
     return GestureDetector(
       onTap: () => FocusScope.of(context).unfocus(),
@@ -157,7 +209,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 onChanged: (val) => setState(() => _searchQuery = val),
                 style: const TextStyle(fontSize: 15, color: Color(0xFF3D1C00)),
                 decoration: InputDecoration(
-                  hintText: CategorySearch,
+                  hintText: CategorySearch, // "કેટેગરી / Item શોધો..."
                   hintStyle: TextStyle(color: Colors.grey.shade400, fontSize: 14),
                   prefixIcon: const Icon(Icons.search, color: Color(0xFFFF8C42), size: 22),
                   suffixIcon: _searchQuery.isNotEmpty
@@ -188,6 +240,11 @@ class _HomeScreenState extends State<HomeScreen> {
                       'કોઈ કેટેગરી મળી નથી',
                       style: TextStyle(color: Colors.grey.shade400, fontSize: 16),
                     ),
+                    const SizedBox(height: 6),
+                    Text(
+                      'Try searching in English or Gujarati',
+                      style: TextStyle(color: Colors.grey.shade300, fontSize: 13),
+                    ),
                   ],
                 ),
               )
@@ -209,23 +266,30 @@ class _HomeScreenState extends State<HomeScreen> {
 
                   return GestureDetector(
                     onTap: () {
-                        final selectedCategory = filtered[index];
-                        final allItems = categoryMap[selectedCategory] ?? [];
+                      final selectedCategory = filtered[index];
+                      final allItems = categoryMap[selectedCategory] ?? [];
 
-                        final filteredItems = _searchQuery.isEmpty
-                            ? allItems
-                            : allItems.where((item) =>
-                            item.toLowerCase().contains(_searchQuery.toLowerCase())).toList();
+                      // ✅ When navigating, show filtered items if search is active
+                      final filteredItems = _searchQuery.isEmpty
+                          ? allItems
+                          : allItems
+                          .where((item) => item
+                          .toLowerCase()
+                          .contains(_searchQuery.toLowerCase()))
+                          .toList();
 
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (_) => SubCategoryScreen(
-                              categoryName: selectedCategory,
-                              subItems: filteredItems,
-                            ),
+                      // If no subcategory matched but category matched, show all items
+                      final itemsToShow = filteredItems.isEmpty ? allItems : filteredItems;
+
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => SubCategoryScreen(
+                            categoryName: selectedCategory,
+                            subItems: itemsToShow,
                           ),
-                        );
+                        ),
+                      );
                     },
                     child: Container(
                       decoration: BoxDecoration(
@@ -293,7 +357,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 },
               ),
             ),
-            SizedBox(height: 10,),
+            const SizedBox(height: 10),
           ],
         ),
       ),

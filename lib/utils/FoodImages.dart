@@ -1,1 +1,1 @@
-const splashLogo = 'assets/images/kitchen.png';
+const splashLogo = 'assets/images/kichen.png';
